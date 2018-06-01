@@ -29,7 +29,13 @@
             * user 
         * reducer function
         * actions and action creators
-        * 
+    *Provider
+* Routing
+    * HashRouter or BrowserRouter
+    * routes
+        * /
+        * /login
+        * /profile
 
 
 
@@ -42,6 +48,7 @@
         * auth controller
             * /auth/callback
             * /logout
+            * /auth/user
 * package.json
     * proxy
 * nodemon
