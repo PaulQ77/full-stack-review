@@ -17,12 +17,12 @@ class Profile extends Component {
     });
   }
 
-  logout(){
+  logout() {
     const { logoutUser, history } = this.props;
     axios.post('/api/logout').then(response => {
       logoutUser();
       history.push('/');
-    })
+    });
   }
   
   render() {
@@ -32,7 +32,7 @@ class Profile extends Component {
       <div>
         <h1>Profile</h1>
         {user && <div>
-          <img src={user.photo} className="photo" alt= ''/>
+          <img src={user.photo} className="photo" />
           <h2>{user.name}</h2>
           <h2>Email: {user.email}</h2>
           <div>
